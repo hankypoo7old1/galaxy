@@ -139,10 +139,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
   document.body.appendChild(themeEle);
 
-  // Set the default background as a purple-blue gradient
-  document.body.style.background = "linear-gradient(to right, purple, blue)";
-
-  // ... (existing code for setting saved background image)
+  // Set the default background using the purple-blue theme CSS file
+  var purpleBlueTheme = document.createElement("link");
+  purpleBlueTheme.rel = "stylesheet";
+  purpleBlueTheme.href = "/css/theme/gradient/purple-blue.css";
+  document.head.appendChild(purpleBlueTheme);
 
 });
 
