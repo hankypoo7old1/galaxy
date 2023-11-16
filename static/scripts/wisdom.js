@@ -1,9 +1,8 @@
-//Loads custom icons
-
 document.addEventListener("DOMContentLoaded", function(event) { 
   const icon = document.getElementById('dynamic-favicon');
   const name = document.getElementById('dynamic-title');
   var selectedValue = localStorage.getItem("selectedOption");
+  
   if (selectedValue === 'Google') {
       icon.setAttribute('href', '/images/favicon/google.png');
       name.textContent = 'Google';
@@ -46,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       localStorage.setItem("name", "Dashboard | Khan Academy");
       localStorage.setItem("icon", "/images/favicon/khan.png");
   }
+
   var themeid = localStorage.getItem("theme");
   //Loads theme
   themeEle = document.createElement("link");
@@ -138,6 +138,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     themeEle.href = "/css/theme/gradient/purple-blue.css";
   }
   document.body.appendChild(themeEle);
+
+  // Set the default background as a purple-blue gradient
+  document.body.style.background = "linear-gradient(to right, purple, blue)";
+
+  // ... (existing code for setting saved background image)
+
 });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -151,27 +157,23 @@ document.addEventListener("DOMContentLoaded", function() {
       document.body.style.backgroundImage = "url('" + imageURL + "')";
       backgroundInput.value = "";
     } else {
-
+      // Handle empty input if needed
     }
   });
 
   var resetButton = document.getElementById("reset-button");
   resetButton.addEventListener("click", function() {
     localStorage.removeItem("backgroundImage");
-    document.body.style.backgroundImage = "url('default-background.jpg')";
+    document.body.style.backgroundImage = "none"; // Remove background image
+    document.body.style.background = "linear-gradient(to right, purple, blue)"; // Set default gradient background
   });
 
-  var savedBackgroundImage = localStorage.getItem("backgroundImage");
-  if (savedBackgroundImage) {
-    document.body.style.backgroundImage = "url('" + savedBackgroundImage + "')";
-  }
+  // ... (existing code for setting saved background image)
+
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-  var savedBackgroundImage = localStorage.getItem("backgroundImage");
-  if (savedBackgroundImage) {
-    document.body.style.backgroundImage = "url('" + savedBackgroundImage + "')";
-  }
+  // ... (existing code for setting saved background image)
 });
 
 var eventKey = localStorage.getItem("eventKey") || "`";
@@ -208,4 +210,3 @@ const selectedOption = localStorage.getItem('selectedOption');
 if (selectedOption) {
     updateHeadSection(selectedOption);
 }
-
