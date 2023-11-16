@@ -1,11 +1,10 @@
 <div align="center">
-    <h1>Interstellar V5</h1>
-    <h3>Interstellar is one of the most modern and popular unblocking sites.</h3>
-    
-### [Join our Discord!](https://discord.gg/interstellar)
-</div>
-
-> **If you do fork this repo, please give the original repo a star! It helps out alot and only 30% of people who fork give us a star... besides, you know you want to...**
+<h1>IMPORTANT!!!</h1>
+<h3>Please note:</h3>
+<ul>
+        <li>I did NOT make this proxy. I am just modifying it for personal use. All credit goes to <a href="https://github.com/InterstellarNetwork">Interstellar Network.</a></li>
+        <li>You can find the original scource code unmodified by me <a href="https://github.com/InterstellarNetwork/Interstellar">here.</a></li>
+</ul>
 
 <h2 align="center">Features</h2>
 <ul>
