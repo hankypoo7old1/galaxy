@@ -3,7 +3,7 @@
 <h3>Please note:</h3>
 <ul>
         <li>I did NOT make this proxy. I am just modifying it for personal use. All credit goes to <a href="https://github.com/InterstellarNetwork">Interstellar Network.</a></li>
-        <li>You can find the original scource code unmodified by me <a href="https://github.com/InterstellarNetwork/Interstellar">here.</a></li>
+        <li>You can find the original scource code <a href="https://github.com/InterstellarNetwork/Interstellar">here.</a></li>
 </ul>
 
 <h2 align="center">Features</h2>
