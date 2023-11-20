@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function() {
   resetButton.addEventListener("click", function() {
     localStorage.removeItem("backgroundImage");
     document.body.style.backgroundImage = "none"; // Remove background image
-    document.body.style.background = "linear-gradient(to right, purple, blue)"; // Set default gradient background
+    document.body.style.background = "linear-gradient(to right, LightSkyBlue, LightPink)"; // Set default gradient background
   });
 
   // ... (existing code for setting saved background image)
